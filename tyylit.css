@@ -3,6 +3,7 @@ body {
     background-color: lightgray;
     font-family: "Lora", serif;
     padding: 40px 75px;       /* bodyn sisälle vietynä tulee koko sivulle */
+    width: 70%
     }
 
 ul {
