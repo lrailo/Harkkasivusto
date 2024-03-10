@@ -1,0 +1,118 @@
+
+body {
+    background-color: lightgray;
+    font-family: "Lora", serif;
+    padding: 40px 75px;       /* bodyn sisälle vietynä tulee koko sivulle */
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(119, 106, 106, 0.5);
+}
+  
+li {
+    float: right;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(214, 148, 60);
+}
+
+header {
+    min-height: 200px;
+    background-image: url("ketunleipä.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+    color: white;
+    
+}
+
+.about {
+    min-height: 200px;
+    background-image: url("atsalea.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.cv {
+    min-height: 200px;
+    background-image: url("kukkivaPuu.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    position: absolute; /* Asetetaan absoluuttinen sijainti suhteessa header-elementtiin */
+    top: 50%; /* Sijoitetaan yläreuna 50% korkeuden yläpuolelle */
+    left: 50%; /* Sijoitetaan vasen reuna 50% leveyden vasemmalle puolelle */
+    transform: translate(-50%, -50%); /* Siirretään elementti keskelle (50% korkeuden ja 50% leveyden verran) */
+    margin: 0; /* Poistetaan mahdolliset marginaalit */
+    font-size: 40px;
+}
+
+h2 {
+    left: 50%; /* Sijoitetaan vasen reuna 50% leveyden vasemmalle puolelle */
+    font-size: 20px;
+}
+
+p{ 
+font-size: 18px;
+}
+
+table td {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer {
+    background-color: #aca9a9; /* Footerin taustaväri */
+    color: #fff; /* Tekstin väri */
+    padding: 20px; /* Sisätilan luominen footerin sisällä */
+    position: sticky; /* Kiinnitetään alareunaan */
+    width: 100%; /* Leveys koko näytölle */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 650px) {
+   li {
+    float: left;
+   }
+   
+    img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-width: 80%;
+    }
+}
+
+
+.pieni-kuva {
+    width:200px;
+    height:auto;
+}
+
